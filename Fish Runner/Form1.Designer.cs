@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Stone = new System.Windows.Forms.PictureBox();
+            this.AI3 = new System.Windows.Forms.PictureBox();
+            this.AI4 = new System.Windows.Forms.PictureBox();
+            this.AI5 = new System.Windows.Forms.PictureBox();
             this.explosion = new System.Windows.Forms.PictureBox();
             this.AI2 = new System.Windows.Forms.PictureBox();
             this.AI1 = new System.Windows.Forms.PictureBox();
@@ -41,11 +45,11 @@
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.hungerBar = new System.Windows.Forms.ProgressBar();
             this.q = new System.Windows.Forms.Label();
-            this.AI5 = new System.Windows.Forms.PictureBox();
-            this.AI4 = new System.Windows.Forms.PictureBox();
-            this.AI3 = new System.Windows.Forms.PictureBox();
-            this.Stone = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Stone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
@@ -53,10 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AI5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AI4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AI3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Stone)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,6 +77,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(802, 412);
             this.panel1.TabIndex = 0;
+            // 
+            // Stone
+            // 
+            this.Stone.Image = global::Fish_Runner.Properties.Resources.Cutie_Sharks__1_;
+            this.Stone.Location = new System.Drawing.Point(734, 169);
+            this.Stone.Name = "Stone";
+            this.Stone.Size = new System.Drawing.Size(48, 41);
+            this.Stone.TabIndex = 10;
+            this.Stone.TabStop = false;
+            // 
+            // AI3
+            // 
+            this.AI3.Image = global::Fish_Runner.Properties.Resources.tas6;
+            this.AI3.Location = new System.Drawing.Point(423, 313);
+            this.AI3.Name = "AI3";
+            this.AI3.Size = new System.Drawing.Size(66, 33);
+            this.AI3.TabIndex = 9;
+            this.AI3.TabStop = false;
+            // 
+            // AI4
+            // 
+            this.AI4.Image = global::Fish_Runner.Properties.Resources.tas5;
+            this.AI4.Location = new System.Drawing.Point(597, 193);
+            this.AI4.Name = "AI4";
+            this.AI4.Size = new System.Drawing.Size(65, 29);
+            this.AI4.TabIndex = 8;
+            this.AI4.TabStop = false;
+            // 
+            // AI5
+            // 
+            this.AI5.Image = global::Fish_Runner.Properties.Resources.tas3;
+            this.AI5.Location = new System.Drawing.Point(390, 67);
+            this.AI5.Name = "AI5";
+            this.AI5.Size = new System.Drawing.Size(54, 34);
+            this.AI5.TabIndex = 7;
+            this.AI5.TabStop = false;
             // 
             // explosion
             // 
@@ -177,8 +213,8 @@
             // 
             // hungerBar
             // 
+            this.hungerBar.BackColor = System.Drawing.Color.Red;
             this.hungerBar.Location = new System.Drawing.Point(53, 12);
-            this.hungerBar.Maximum = 150;
             this.hungerBar.Name = "hungerBar";
             this.hungerBar.Size = new System.Drawing.Size(164, 23);
             this.hungerBar.TabIndex = 3;
@@ -193,42 +229,6 @@
             this.q.TabIndex = 4;
             this.q.Text = "Score: 0";
             this.q.Click += new System.EventHandler(this.q_Click);
-            // 
-            // AI5
-            // 
-            this.AI5.Image = global::Fish_Runner.Properties.Resources.tas3;
-            this.AI5.Location = new System.Drawing.Point(390, 67);
-            this.AI5.Name = "AI5";
-            this.AI5.Size = new System.Drawing.Size(54, 34);
-            this.AI5.TabIndex = 7;
-            this.AI5.TabStop = false;
-            // 
-            // AI4
-            // 
-            this.AI4.Image = global::Fish_Runner.Properties.Resources.tas5;
-            this.AI4.Location = new System.Drawing.Point(597, 193);
-            this.AI4.Name = "AI4";
-            this.AI4.Size = new System.Drawing.Size(65, 29);
-            this.AI4.TabIndex = 8;
-            this.AI4.TabStop = false;
-            // 
-            // AI3
-            // 
-            this.AI3.Image = global::Fish_Runner.Properties.Resources.tas6;
-            this.AI3.Location = new System.Drawing.Point(423, 313);
-            this.AI3.Name = "AI3";
-            this.AI3.Size = new System.Drawing.Size(66, 33);
-            this.AI3.TabIndex = 9;
-            this.AI3.TabStop = false;
-            // 
-            // Stone
-            // 
-            this.Stone.Image = global::Fish_Runner.Properties.Resources.Cutie_Sharks__1_;
-            this.Stone.Location = new System.Drawing.Point(734, 169);
-            this.Stone.Name = "Stone";
-            this.Stone.Size = new System.Drawing.Size(48, 41);
-            this.Stone.TabIndex = 10;
-            this.Stone.TabStop = false;
             // 
             // Form1
             // 
@@ -245,6 +245,10 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Stone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).EndInit();
@@ -252,10 +256,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AI5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AI4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AI3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Stone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

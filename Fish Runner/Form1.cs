@@ -17,17 +17,27 @@ namespace Fish_Runner
         int playerSpeed = 12;
         int score;
         int fishImage;
+        int facing = 0;
+
+
+        Image playerImage;
 
         Random rand = new Random();
         Random fishPosition = new Random();
 
-        bool godown, goup, goLeft, goRight; 
+        bool godown, goup, goLeft, goRight;
+
 
 
         public Form1()
         {
+
+            
             InitializeComponent();
             ResetGame();
+            playerImage = player.Image;
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -55,12 +65,22 @@ namespace Fish_Runner
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 goRight = true;
+                if(facing%2 != 0)
+                {
+                    FlipImageHorizontally(player);
+                }
+
             }
 
             // Sol hareket
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
                 goLeft = true;
+                if(facing%2 == 0)
+                {
+                    FlipImageHorizontally(player);
+                }
+
             }
         }
 
@@ -90,14 +110,15 @@ namespace Fish_Runner
         }
         private void gameTimerEvent(object sender, EventArgs e)
         {
+
             // Aşağı hareket
-            if (godown == true && player.Bottom < 412)
+            if (godown == true && player.Bottom < 330)
             {
                 player.Top += playerSpeed;
             }
-            else if (player.Bottom >= 412)
+            if (player.Bottom >= 330)
             {
-                player.Top = 412 - player.Height; // Alt sınırda dur
+               
             }
 
             // Yukarı hareket
@@ -120,6 +141,7 @@ namespace Fish_Runner
             if (goLeft == true && player.Left > 0)  // Sol sınırda dur
             {
                 player.Left -= playerSpeed;
+            
             }
 
 
@@ -158,6 +180,7 @@ namespace Fish_Runner
             EatFish(AI4);
             EatFish(AI5);
             EatStone(Stone);
+            
 
             // Açlık barını azalt
             if (hungerBar.Value > 0)
@@ -192,6 +215,7 @@ namespace Fish_Runner
 
         private void ResetGame()
         {
+
             btnStart.Enabled = true; // Oyuna başlama butonu aktif
             explosion.Visible = false; // Explosion başlangıçta gizli
             loser.Visible = false;     // Loser başlangıçta gizli
@@ -227,7 +251,9 @@ namespace Fish_Runner
         {
             ResetGame(); // Oyunu sıfırla
             gameTimer.Start(); // Zamanlayıcıyı başlat
+            SendKeys.SendWait("A");
             btnStart.Enabled = false; // Başlat butonunu pasifleştir
+            
         }
 
         private void playSound()
@@ -237,7 +263,7 @@ namespace Fish_Runner
         }
         private void Respawn(PictureBox fish)
         {
-            fish.Top = fishPosition.Next(50, 362); // 50 ile 362 arasında rastgele bir konum
+            fish.Top = fishPosition.Next(50, 330); // 50 ile 362 arasında rastgele bir konum
             fish.Left = fishPosition.Next(500, 800); // Sağ tarafta başlasın
             fish.Visible = true; // Balığı görünür yap
         }
@@ -247,7 +273,7 @@ namespace Fish_Runner
 
         }
 
-        private void EatFish(PictureBox fish)
+        private async void EatFish(PictureBox fish)
         {
 
             
@@ -256,7 +282,13 @@ namespace Fish_Runner
             if (player.Bounds.IntersectsWith(fish.Bounds))
             {
                 fish.Visible = false; // Balığı gizle
-                player.Image = Image.FromFile("Resources/CutieSharks.gif");
+                
+                player.Image = Properties.Resources.tas1;
+
+                if (facing % 2 != 0)
+                {
+                    FlipImageHorizontally(player);
+                }
 
                 // Açlık barını artır
                 hungerBar.Value = Math.Min(hungerBar.Maximum, hungerBar.Value + 20);
@@ -266,6 +298,14 @@ namespace Fish_Runner
 
                 // Balığı yeniden doğur
                 Respawn(fish as PictureBox);
+
+
+                await Task.Delay(1000);
+                player.Image = playerImage;
+                if (facing % 2 != 0)
+                {
+                    FlipImageHorizontally(player);
+                }
             }
 
         }
@@ -302,6 +342,34 @@ namespace Fish_Runner
             {
                 Respawn(fish);
             }
+        }
+
+
+
+        private void FlipImageHorizontally(PictureBox pictureBox)
+        {
+
+                facing++;
+
+            // PictureBox'ın mevcut resmini al
+            Image originalImage = pictureBox.Image;
+
+            // Yeni bir Bitmap oluştur (Resmin boyutlarıyla)
+            Bitmap flippedImage = new Bitmap(originalImage);
+
+            // Yatay flip işlemi yapmak için Graphics objesi kullanıyoruz
+            using (Graphics g = Graphics.FromImage(flippedImage))
+            {
+                // Resmi yatayda ters çevir (X ekseninde)
+                g.Clear(Color.Transparent); // Sayfanın temizlenmesi
+                g.ScaleTransform(-1, 1);  // Yatayda ters çevirme
+                g.DrawImage(originalImage, new Point(-originalImage.Width, 0)); // Resmi çiz
+            }
+
+            // PictureBox'ta resmi güncelle
+            pictureBox.Image = flippedImage;
+        
+            
         }
     }
 }
