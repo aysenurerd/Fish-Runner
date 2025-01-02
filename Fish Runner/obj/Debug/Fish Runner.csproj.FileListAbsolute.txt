@@ -1,0 +1,10 @@
+D:\Fish Runner\Fish Runner\bin\Debug\Fish Runner.exe.config
+D:\Fish Runner\Fish Runner\bin\Debug\Fish Runner.exe
+D:\Fish Runner\Fish Runner\bin\Debug\Fish Runner.pdb
+D:\Fish Runner\Fish Runner\obj\Debug\Fish Runner.csproj.AssemblyReference.cache
+D:\Fish Runner\Fish Runner\obj\Debug\Fish_Runner.Form1.resources
+D:\Fish Runner\Fish Runner\obj\Debug\Fish_Runner.Properties.Resources.resources
+D:\Fish Runner\Fish Runner\obj\Debug\Fish Runner.csproj.GenerateResource.cache
+D:\Fish Runner\Fish Runner\obj\Debug\Fish Runner.csproj.CoreCompileInputs.cache
+D:\Fish Runner\Fish Runner\obj\Debug\Fish Runner.exe
+D:\Fish Runner\Fish Runner\obj\Debug\Fish Runner.pdb
