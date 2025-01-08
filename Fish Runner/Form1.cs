@@ -283,7 +283,7 @@ namespace Fish_Runner
             {
                 fish.Visible = false; // Balığı gizle
                 
-                player.Image = Properties.Resources.tas1;
+                player.Image = Properties.Resources.Eatshark;
 
                 if (facing % 2 != 0)
                 {

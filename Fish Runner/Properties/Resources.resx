@@ -121,6 +121,9 @@
   <data name="balik" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\balik.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BlueFish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueFish.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boom.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,8 +133,23 @@
   <data name="Cutie_Sharks__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cutie Sharks (1) .gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Eatshark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eatshark.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ekran_görüntüsü_2024_12_19_192205" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ekran görüntüsü 2024-12-19 192205.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FishBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FishPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishPink.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FishRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishRed.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FishYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="japon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\japon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,8 +157,26 @@
   <data name="MoveShark_01_01_2025_08_25_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MoveShark 01-01-2025 08-25-25.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sea1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sea2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sea11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sea3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sea3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sea4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sea4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sea4__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sea4 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="shark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snake.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,7 +193,16 @@
   <data name="tas5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tas5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tas51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tas51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tas6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled_01_03_2025_12_57_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled 01-03-2025 12-57-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowFish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YellowFish.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

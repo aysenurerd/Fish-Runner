@@ -128,5 +128,50 @@
   <ItemGroup>
     <None Include="Resources\Cutie Sharks %281%29 .gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eatshark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled 01-03-2025 12-57-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishRed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishPink.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YellowFish.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueFish.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sea1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sea11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sea3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tas51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sea4 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sea4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
