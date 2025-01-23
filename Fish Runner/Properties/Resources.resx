@@ -157,6 +157,15 @@
   <data name="MoveShark_01_01_2025_08_25_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MoveShark 01-01-2025 08-25-25.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="se4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\se4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="se41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\se41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="se411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\se411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sea1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -168,6 +177,9 @@
   </data>
   <data name="Sea4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sea4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sea41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sea41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sea4__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sea4 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -193,6 +193,36 @@ namespace Fish_Runner.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap se4 {
+            get {
+                object obj = ResourceManager.GetObject("se4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap se41 {
+            get {
+                object obj = ResourceManager.GetObject("se41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap se411 {
+            get {
+                object obj = ResourceManager.GetObject("se411", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap sea1 {
             get {
                 object obj = ResourceManager.GetObject("sea1", resourceCulture);
@@ -236,6 +266,16 @@ namespace Fish_Runner.Properties {
         internal static System.Drawing.Bitmap Sea4__1_ {
             get {
                 object obj = ResourceManager.GetObject("Sea4__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sea41 {
+            get {
+                object obj = ResourceManager.GetObject("Sea41", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

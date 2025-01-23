@@ -33,7 +33,9 @@
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.hungerBar = new System.Windows.Forms.ProgressBar();
             this.q = new System.Windows.Forms.Label();
+            this.missileTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Bomb = new System.Windows.Forms.PictureBox();
             this.Stone = new System.Windows.Forms.PictureBox();
             this.AI3 = new System.Windows.Forms.PictureBox();
             this.AI4 = new System.Windows.Forms.PictureBox();
@@ -43,9 +45,10 @@
             this.AI1 = new System.Windows.Forms.PictureBox();
             this.loser = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
-            this.UnderSea1 = new System.Windows.Forms.PictureBox();
             this.UnderSea2 = new System.Windows.Forms.PictureBox();
+            this.UnderSea1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Bomb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Stone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI4)).BeginInit();
@@ -55,8 +58,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UnderSea1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UnderSea1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStart
@@ -73,7 +76,7 @@
             // 
             // gameTimer
             // 
-            this.gameTimer.Interval = 20;
+            this.gameTimer.Interval = 30;
             this.gameTimer.Tick += new System.EventHandler(this.gameTimerEvent);
             // 
             // hungerBar
@@ -97,8 +100,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel1.BackgroundImage = global::Fish_Runner.Properties.Resources.Sea4__1_;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Fish_Runner.Properties.Resources.se41;
+            this.panel1.Controls.Add(this.Bomb);
             this.panel1.Controls.Add(this.Stone);
             this.panel1.Controls.Add(this.AI3);
             this.panel1.Controls.Add(this.AI4);
@@ -114,6 +118,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(802, 412);
             this.panel1.TabIndex = 0;
+            // 
+            // Bomb
+            // 
+            this.Bomb.Image = global::Fish_Runner.Properties.Resources.tas1;
+            this.Bomb.Location = new System.Drawing.Point(682, 67);
+            this.Bomb.Name = "Bomb";
+            this.Bomb.Size = new System.Drawing.Size(41, 35);
+            this.Bomb.TabIndex = 12;
+            this.Bomb.TabStop = false;
             // 
             // Stone
             // 
@@ -190,8 +203,8 @@
             this.AI1.Image = global::Fish_Runner.Properties.Resources.FishPink;
             this.AI1.Location = new System.Drawing.Point(575, 67);
             this.AI1.Name = "AI1";
-            this.AI1.Size = new System.Drawing.Size(57, 50);
-            this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AI1.Size = new System.Drawing.Size(32, 32);
+            this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.AI1.TabIndex = 4;
             this.AI1.TabStop = false;
             this.AI1.Tag = "fishDown";
@@ -221,27 +234,29 @@
             this.player.TabStop = false;
             this.player.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // UnderSea1
-            // 
-            this.UnderSea1.BackgroundImage = global::Fish_Runner.Properties.Resources.Ekran_görüntüsü_2024_12_19_192205;
-            this.UnderSea1.Image = global::Fish_Runner.Properties.Resources.Ekran_görüntüsü_2024_12_19_192205;
-            this.UnderSea1.Location = new System.Drawing.Point(-902, 0);
-            this.UnderSea1.Name = "UnderSea1";
-            this.UnderSea1.Size = new System.Drawing.Size(802, 419);
-            this.UnderSea1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UnderSea1.TabIndex = 0;
-            this.UnderSea1.TabStop = false;
-            // 
             // UnderSea2
             // 
             this.UnderSea2.BackColor = System.Drawing.Color.Transparent;
-            this.UnderSea2.Image = global::Fish_Runner.Properties.Resources.Sea4;
+            this.UnderSea2.Image = global::Fish_Runner.Properties.Resources.se4;
             this.UnderSea2.Location = new System.Drawing.Point(0, 0);
             this.UnderSea2.Name = "UnderSea2";
             this.UnderSea2.Size = new System.Drawing.Size(802, 412);
             this.UnderSea2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.UnderSea2.TabIndex = 1;
             this.UnderSea2.TabStop = false;
+            this.UnderSea2.Tag = "Sea4";
+            // 
+            // UnderSea1
+            // 
+            this.UnderSea1.BackgroundImage = global::Fish_Runner.Properties.Resources.Sea41;
+            this.UnderSea1.Image = global::Fish_Runner.Properties.Resources.Sea4__1_;
+            this.UnderSea1.Location = new System.Drawing.Point(-802, 0);
+            this.UnderSea1.Name = "UnderSea1";
+            this.UnderSea1.Size = new System.Drawing.Size(802, 412);
+            this.UnderSea1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UnderSea1.TabIndex = 0;
+            this.UnderSea1.TabStop = false;
+            this.UnderSea1.Tag = "Sea4";
             // 
             // Form1
             // 
@@ -258,6 +273,8 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Bomb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Stone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI4)).EndInit();
@@ -267,8 +284,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UnderSea1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UnderSea1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,6 +309,8 @@
         private System.Windows.Forms.PictureBox AI5;
         private System.Windows.Forms.PictureBox Stone;
         private System.Windows.Forms.PictureBox UnderSea2;
+        private System.Windows.Forms.PictureBox Bomb;
+        private System.Windows.Forms.Timer missileTimer;
     }
 }
 
