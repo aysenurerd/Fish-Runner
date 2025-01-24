@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,116 +13,66 @@ namespace Fish_Runner
 {
     public partial class Form1 : Form
     {
-       
         int seaSpeed;
         int fishSpeed;
         int playerSpeed = 12;
         int score;
-        int fishImage;
         int facing = 0;
 
         Image playerImage;
-
         Random rand = new Random();
         Random fishPosition = new Random();
 
         bool godown, goup, goLeft, goRight;
+
+        SoundPlayer backgroundMusic;
+        SoundPlayer eatFishSound;
+        SoundPlayer explosionSound;
 
         public Form1()
         {
             InitializeComponent();
             ResetGame();
             playerImage = player.Image;
-        }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+            // Load sounds
+            backgroundMusic = new SoundPlayer(Properties.Resources.backgraundSaound);
+            //eatFishSound = new SoundPlayer(Properties.Resources.EatFishSound);
+            explosionSound = new SoundPlayer(Properties.Resources.ExplosionSound);
 
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
+            backgroundMusic.PlayLooping(); // Play background music in a loop
         }
 
         private void keyisdown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
-            {
-                godown = true;
-            }
-
-            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
-            {
-                goup = true;
-            }
-
+            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S) godown = true;
+            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W) goup = true;
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 goRight = true;
-                if (facing % 2 != 0)
-                {
-                    FlipImageHorizontally(player);
-                }
-
+                if (facing % 2 != 0) FlipImageHorizontally(player);
             }
-
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
                 goLeft = true;
-                if (facing % 2 == 0)
-                {
-                    FlipImageHorizontally(player);
-                }
-
+                if (facing % 2 == 0) FlipImageHorizontally(player);
             }
         }
 
         private void keyisup(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
-            {
-                godown = false;
-            }
-
-            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
-            {
-                goup = false;
-            }
-
-            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
-            {
-                goRight = false;
-            }
-
-            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
-            {
-                goLeft = false;
-            }
+            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S) godown = false;
+            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W) goup = false;
+            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D) goRight = false;
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A) goLeft = false;
         }
 
         private void gameTimerEvent(object sender, EventArgs e)
         {
-            if (godown == true && player.Bottom < 330)
-            {
-                player.Top += playerSpeed;
-            }
-            if (goup == true && player.Top > 0)
-            {
-                player.Top -= playerSpeed;
-            }
-
-            if (goRight == true && player.Right < this.ClientSize.Width)
-            {
-                player.Left += playerSpeed;
-            }
-
-            if (goLeft == true && player.Left > 0)
-            {
-                player.Left -= playerSpeed;
-            }
-
-           
+            if (godown && player.Bottom < 330) player.Top += playerSpeed;
+            if (goup && player.Top > 0) player.Top -= playerSpeed;
+            if (goRight && player.Right < this.ClientSize.Width) player.Left += playerSpeed;
+            if (goLeft && player.Left > 0) player.Left -= playerSpeed;
 
             score++;
             q.Text = "Score: " + score;
@@ -133,7 +83,7 @@ namespace Fish_Runner
             AI4.Left -= fishSpeed;
             AI5.Left -= fishSpeed;
             Stone.Left -= fishSpeed;
-            Bomb.Left -= fishSpeed; // Bomb hareketi
+            Bomb.Left -= fishSpeed;
 
             alandisari(AI1);
             alandisari(AI2);
@@ -141,7 +91,7 @@ namespace Fish_Runner
             alandisari(AI4);
             alandisari(AI5);
             alandisari(Stone);
-            alandisari(Bomb); // Bomb yeniden doğma kontrolü
+            alandisari(Bomb);
 
             EatFish(AI1);
             EatFish(AI2);
@@ -149,7 +99,7 @@ namespace Fish_Runner
             EatFish(AI4);
             EatFish(AI5);
             EatStone(Stone);
-            HitBomb(Bomb); // Bomb kontrolü
+            HitBomb(Bomb);
 
             if (hungerBar.Value > 0)
             {
@@ -163,38 +113,24 @@ namespace Fish_Runner
             q.Text = "Score: " + score;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void changeAIfish(PictureBox tempFish)
-        {
-
-        }
-
         private void gameOver()
         {
             gameTimer.Stop();
+            backgroundMusic.Stop();
             MessageBox.Show("Game Over! Your Score: " + score);
-            ResetGame();
+            
         }
 
         private void ResetGame()
         {
             btnStart.Enabled = true;
             explosion.Visible = false;
-            loser.Visible = false;
             godown = false;
             goup = false;
-
             score = 0;
-
             player.Top = 412 / 2 - player.Height / 2;
             player.Left = 200;
-
             hungerBar.Value = hungerBar.Maximum;
-
             seaSpeed = 12;
             fishSpeed = 5;
 
@@ -212,61 +148,30 @@ namespace Fish_Runner
         private void btnStart_Click(object sender, EventArgs e)
         {
             ResetGame();
+            backgroundMusic.PlayLooping();
             gameTimer.Start();
             btnStart.Enabled = false;
         }
-
-        private void playSound()
-        {
-
-        }
-
-        private void Respawn(PictureBox fish)
-        {
-            fish.Top = fishPosition.Next(50, 330);
-            fish.Left = fishPosition.Next(500, 800);
-            fish.Visible = true;
-        }
-
-        private void q_Click(object sender, EventArgs e)
-        {
-
-        }
-        
-       
-
-
-
-
 
         private async void EatFish(PictureBox fish)
         {
             if (player.Bounds.IntersectsWith(fish.Bounds))
             {
                 fish.Visible = false;
-
                 player.Image = Properties.Resources.Eatshark;
+                //eatFishSound.Play();
 
-                if (facing % 2 != 0)
-                {
-                    FlipImageHorizontally(player);
-                }
+                if (facing % 2 != 0) FlipImageHorizontally(player);
 
                 hungerBar.Value = Math.Min(hungerBar.Maximum, hungerBar.Value + 20);
-
                 score += 10;
-
                 Respawn(fish);
 
                 await Task.Delay(1000);
                 player.Image = playerImage;
-                if (facing % 2 != 0)
-                {
-                    FlipImageHorizontally(player);
-                }
+                if (facing % 2 != 0) FlipImageHorizontally(player);
             }
         }
-
         private void EatStone(PictureBox thing)
         {
             if (player.Bounds.IntersectsWith(thing.Bounds))
@@ -278,24 +183,20 @@ namespace Fish_Runner
                 Respawn(thing);
             }
         }
-
         private void HitBomb(PictureBox bomb)
         {
             if (player.Bounds.IntersectsWith(bomb.Bounds))
             {
                 bomb.Visible = false;
-
                 explosion.Left = bomb.Left;
                 explosion.Top = bomb.Top;
                 explosion.Visible = true;
-
+                explosionSound.Play();
                 gameTimer.Stop();
-
                 MessageBox.Show("Game Over! You hit a bomb!");
-                ResetGame();
+                
             }
         }
-
         private void alandisari(PictureBox fish)
         {
             if (fish.Left + fish.Width < 0)
@@ -304,12 +205,15 @@ namespace Fish_Runner
             }
         }
 
+        private void UnderSea2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void FlipImageHorizontally(PictureBox pictureBox)
         {
             facing++;
-
             Image originalImage = pictureBox.Image;
-
             Bitmap flippedImage = new Bitmap(originalImage);
 
             using (Graphics g = Graphics.FromImage(flippedImage))
@@ -320,6 +224,13 @@ namespace Fish_Runner
             }
 
             pictureBox.Image = flippedImage;
+        }
+
+        private void Respawn(PictureBox fish)
+        {
+            fish.Top = fishPosition.Next(50, 330);
+            fish.Left = fishPosition.Next(500, 800);
+            fish.Visible = true;
         }
     }
 }

@@ -185,5 +185,14 @@
   <ItemGroup>
     <None Include="Resources\se411.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExplosionSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EatFishSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgraundSaound.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

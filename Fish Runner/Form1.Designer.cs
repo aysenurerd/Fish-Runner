@@ -43,7 +43,6 @@
             this.explosion = new System.Windows.Forms.PictureBox();
             this.AI2 = new System.Windows.Forms.PictureBox();
             this.AI1 = new System.Windows.Forms.PictureBox();
-            this.loser = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.UnderSea2 = new System.Windows.Forms.PictureBox();
             this.UnderSea1 = new System.Windows.Forms.PictureBox();
@@ -56,7 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea1)).BeginInit();
@@ -96,7 +94,7 @@
             this.q.Size = new System.Drawing.Size(127, 32);
             this.q.TabIndex = 4;
             this.q.Text = "Score: 0";
-            this.q.Click += new System.EventHandler(this.q_Click);
+           // this.q.Click += new System.EventHandler(this.q_Click);
             // 
             // panel1
             // 
@@ -110,7 +108,6 @@
             this.panel1.Controls.Add(this.explosion);
             this.panel1.Controls.Add(this.AI2);
             this.panel1.Controls.Add(this.AI1);
-            this.panel1.Controls.Add(this.loser);
             this.panel1.Controls.Add(this.player);
             this.panel1.Controls.Add(this.UnderSea2);
             this.panel1.Controls.Add(this.UnderSea1);
@@ -183,7 +180,7 @@
             this.explosion.TabIndex = 6;
             this.explosion.TabStop = false;
             this.explosion.Visible = false;
-            this.explosion.Click += new System.EventHandler(this.pictureBox5_Click);
+        //   this.explosion.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // AI2
             // 
@@ -211,17 +208,6 @@
             this.AI1.UseWaitCursor = true;
             this.AI1.Visible = false;
             // 
-            // loser
-            // 
-            this.loser.Image = global::Fish_Runner.Properties.Resources.tas2;
-            this.loser.Location = new System.Drawing.Point(213, 146);
-            this.loser.Name = "loser";
-            this.loser.Size = new System.Drawing.Size(318, 110);
-            this.loser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.loser.TabIndex = 3;
-            this.loser.TabStop = false;
-            this.loser.Visible = false;
-            // 
             // player
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
@@ -232,7 +218,7 @@
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.player.TabIndex = 2;
             this.player.TabStop = false;
-            this.player.Click += new System.EventHandler(this.pictureBox1_Click);
+           // this.player.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // UnderSea2
             // 
@@ -269,7 +255,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Fish Runner";
-            this.Load += new System.EventHandler(this.Form1_Load);
+           // this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             this.panel1.ResumeLayout(false);
@@ -282,7 +268,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UnderSea1)).EndInit();
@@ -299,7 +284,6 @@
         private System.Windows.Forms.PictureBox explosion;
         private System.Windows.Forms.PictureBox AI2;
         private System.Windows.Forms.PictureBox AI1;
-        private System.Windows.Forms.PictureBox loser;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.ProgressBar hungerBar;

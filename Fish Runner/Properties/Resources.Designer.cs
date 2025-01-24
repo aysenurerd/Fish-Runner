@@ -61,6 +61,15 @@ namespace Fish_Runner.Properties {
         }
         
         /// <summary>
+        ///   System.IO.MemoryStream öğesine benzeyen System.IO.UnmanagedMemoryStream türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream backgraundSaound {
+            get {
+                return ResourceManager.GetStream("backgraundSaound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
         internal static System.Drawing.Bitmap balik {
@@ -111,6 +120,15 @@ namespace Fish_Runner.Properties {
         }
         
         /// <summary>
+        ///   System.IO.MemoryStream öğesine benzeyen System.IO.UnmanagedMemoryStream türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream EatFishSound {
+            get {
+                return ResourceManager.GetStream("EatFishSound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
         internal static System.Drawing.Bitmap Eatshark {
@@ -127,6 +145,15 @@ namespace Fish_Runner.Properties {
             get {
                 object obj = ResourceManager.GetObject("Ekran_görüntüsü_2024_12_19_192205", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.IO.MemoryStream öğesine benzeyen System.IO.UnmanagedMemoryStream türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ExplosionSound {
+            get {
+                return ResourceManager.GetStream("ExplosionSound", resourceCulture);
             }
         }
         
