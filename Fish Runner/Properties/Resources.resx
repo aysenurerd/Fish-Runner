@@ -121,20 +121,11 @@
   <data name="backgraundSaound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgraundSaound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="balik" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\balik.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BlueFish" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BlueFish.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boom.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CutieSharks" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CutieSharks.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cutie_Sharks__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cutie Sharks (1) .gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EatFishSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EatFishSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -148,20 +139,17 @@
   <data name="ExplosionSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ExplosionSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="FishBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FishBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FishBlue1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishBlue.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FishPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FishPink.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fishpink1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fishpink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FishRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishRed.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FishYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FishYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="japon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\japon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FishYellow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishYellow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MoveShark_01_01_2025_08_25_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MoveShark 01-01-2025 08-25-25.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,26 +187,11 @@
   <data name="Snake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snake.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ston" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ston.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tas2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tas3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tas3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tas4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tas4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tas5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tas5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tas51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tas51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tas6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled_01_03_2025_12_57_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled 01-03-2025 12-57-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

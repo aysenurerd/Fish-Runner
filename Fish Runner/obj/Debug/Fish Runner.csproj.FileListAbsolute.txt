@@ -8,3 +8,4 @@ D:\Fish Runner\Fish Runner\obj\Debug\Fish Runner.csproj.GenerateResource.cache
 D:\Fish Runner\Fish Runner\obj\Debug\Fish Runner.csproj.CoreCompileInputs.cache
 D:\Fish Runner\Fish Runner\obj\Debug\Fish Runner.exe
 D:\Fish Runner\Fish Runner\obj\Debug\Fish Runner.pdb
+D:\Fish Runner\Fish Runner\obj\Debug\Fish_Runner.Form2.resources

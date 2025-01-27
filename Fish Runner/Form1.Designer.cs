@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnStart = new System.Windows.Forms.Button();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.hungerBar = new System.Windows.Forms.ProgressBar();
@@ -80,7 +81,8 @@
             // hungerBar
             // 
             this.hungerBar.BackColor = System.Drawing.Color.Red;
-            this.hungerBar.Location = new System.Drawing.Point(53, 12);
+            this.hungerBar.Location = new System.Drawing.Point(49, 12);
+            this.hungerBar.Maximum = 500;
             this.hungerBar.Name = "hungerBar";
             this.hungerBar.Size = new System.Drawing.Size(164, 23);
             this.hungerBar.TabIndex = 3;
@@ -94,12 +96,11 @@
             this.q.Size = new System.Drawing.Size(127, 32);
             this.q.TabIndex = 4;
             this.q.Text = "Score: 0";
-           // this.q.Click += new System.EventHandler(this.q_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Fish_Runner.Properties.Resources.se41;
+            this.panel1.BackgroundImage = global::Fish_Runner.Properties.Resources.se411;
             this.panel1.Controls.Add(this.Bomb);
             this.panel1.Controls.Add(this.Stone);
             this.panel1.Controls.Add(this.AI3);
@@ -118,17 +119,18 @@
             // 
             // Bomb
             // 
-            this.Bomb.Image = global::Fish_Runner.Properties.Resources.tas1;
+            this.Bomb.Image = global::Fish_Runner.Properties.Resources.Bomb;
             this.Bomb.Location = new System.Drawing.Point(682, 67);
             this.Bomb.Name = "Bomb";
-            this.Bomb.Size = new System.Drawing.Size(41, 35);
+            this.Bomb.Size = new System.Drawing.Size(47, 48);
+            this.Bomb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Bomb.TabIndex = 12;
             this.Bomb.TabStop = false;
             // 
             // Stone
             // 
             this.Stone.BackColor = System.Drawing.Color.Transparent;
-            this.Stone.Image = global::Fish_Runner.Properties.Resources.Untitled_01_03_2025_12_57_34;
+            this.Stone.Image = global::Fish_Runner.Properties.Resources.Ston;
             this.Stone.Location = new System.Drawing.Point(734, 169);
             this.Stone.Name = "Stone";
             this.Stone.Size = new System.Drawing.Size(36, 37);
@@ -139,10 +141,10 @@
             // AI3
             // 
             this.AI3.BackColor = System.Drawing.Color.Transparent;
-            this.AI3.Image = global::Fish_Runner.Properties.Resources.YellowFish;
-            this.AI3.Location = new System.Drawing.Point(418, 313);
+            this.AI3.Image = global::Fish_Runner.Properties.Resources.FishYellow1;
+            this.AI3.Location = new System.Drawing.Point(427, 313);
             this.AI3.Name = "AI3";
-            this.AI3.Size = new System.Drawing.Size(50, 32);
+            this.AI3.Size = new System.Drawing.Size(41, 26);
             this.AI3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AI3.TabIndex = 9;
             this.AI3.TabStop = false;
@@ -150,10 +152,10 @@
             // AI4
             // 
             this.AI4.BackColor = System.Drawing.Color.Transparent;
-            this.AI4.Image = global::Fish_Runner.Properties.Resources.BlueFish;
+            this.AI4.Image = global::Fish_Runner.Properties.Resources.FishBlue1;
             this.AI4.Location = new System.Drawing.Point(598, 193);
             this.AI4.Name = "AI4";
-            this.AI4.Size = new System.Drawing.Size(45, 34);
+            this.AI4.Size = new System.Drawing.Size(57, 34);
             this.AI4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AI4.TabIndex = 8;
             this.AI4.TabStop = false;
@@ -175,12 +177,11 @@
             this.explosion.Image = global::Fish_Runner.Properties.Resources.boom;
             this.explosion.Location = new System.Drawing.Point(253, 67);
             this.explosion.Name = "explosion";
-            this.explosion.Size = new System.Drawing.Size(58, 50);
+            this.explosion.Size = new System.Drawing.Size(53, 48);
             this.explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.explosion.TabIndex = 6;
             this.explosion.TabStop = false;
             this.explosion.Visible = false;
-        //   this.explosion.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // AI2
             // 
@@ -197,11 +198,11 @@
             // AI1
             // 
             this.AI1.BackColor = System.Drawing.Color.Transparent;
-            this.AI1.Image = global::Fish_Runner.Properties.Resources.FishPink;
+            this.AI1.Image = global::Fish_Runner.Properties.Resources.Fishpink1;
             this.AI1.Location = new System.Drawing.Point(575, 67);
             this.AI1.Name = "AI1";
-            this.AI1.Size = new System.Drawing.Size(32, 32);
-            this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.AI1.Size = new System.Drawing.Size(32, 24);
+            this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AI1.TabIndex = 4;
             this.AI1.TabStop = false;
             this.AI1.Tag = "fishDown";
@@ -218,7 +219,6 @@
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.player.TabIndex = 2;
             this.player.TabStop = false;
-           // this.player.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // UnderSea2
             // 
@@ -253,13 +253,12 @@
             this.Controls.Add(this.hungerBar);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Fish Runner";
-           // this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Shark Franzy";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Bomb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Stone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI3)).EndInit();

@@ -72,19 +72,9 @@ namespace Fish_Runner.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap balik {
+        internal static System.Drawing.Bitmap Bomb {
             get {
-                object obj = ResourceManager.GetObject("balik", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap BlueFish {
-            get {
-                object obj = ResourceManager.GetObject("BlueFish", resourceCulture);
+                object obj = ResourceManager.GetObject("Bomb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,26 +85,6 @@ namespace Fish_Runner.Properties {
         internal static System.Drawing.Bitmap boom {
             get {
                 object obj = ResourceManager.GetObject("boom", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap Cutie_Sharks__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Cutie_Sharks__1_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap CutieSharks {
-            get {
-                object obj = ResourceManager.GetObject("CutieSharks", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -160,9 +130,9 @@ namespace Fish_Runner.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap FishBlue {
+        internal static System.Drawing.Bitmap FishBlue1 {
             get {
-                object obj = ResourceManager.GetObject("FishBlue", resourceCulture);
+                object obj = ResourceManager.GetObject("FishBlue1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -170,9 +140,9 @@ namespace Fish_Runner.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap FishPink {
+        internal static System.Drawing.Bitmap Fishpink1 {
             get {
-                object obj = ResourceManager.GetObject("FishPink", resourceCulture);
+                object obj = ResourceManager.GetObject("Fishpink1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -190,19 +160,9 @@ namespace Fish_Runner.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap FishYellow {
+        internal static System.Drawing.Bitmap FishYellow1 {
             get {
-                object obj = ResourceManager.GetObject("FishYellow", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap japon {
-            get {
-                object obj = ResourceManager.GetObject("japon", resourceCulture);
+                object obj = ResourceManager.GetObject("FishYellow1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -330,69 +290,19 @@ namespace Fish_Runner.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Ston {
+            get {
+                object obj = ResourceManager.GetObject("Ston", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap tas1 {
             get {
                 object obj = ResourceManager.GetObject("tas1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap tas2 {
-            get {
-                object obj = ResourceManager.GetObject("tas2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap tas3 {
-            get {
-                object obj = ResourceManager.GetObject("tas3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap tas4 {
-            get {
-                object obj = ResourceManager.GetObject("tas4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap tas5 {
-            get {
-                object obj = ResourceManager.GetObject("tas5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap tas51 {
-            get {
-                object obj = ResourceManager.GetObject("tas51", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap tas6 {
-            get {
-                object obj = ResourceManager.GetObject("tas6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
