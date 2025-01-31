@@ -235,14 +235,11 @@ namespace Fish_Runner
             Respawn(Bomb);
 
             gameTimer.Stop();
-            btnStart.Text = "Başlat";
+            btnStart.Text = "Start";
         }
 
         private async void EatFish(PictureBox fish)
         {
-
-
-
 
             if (player.Bounds.IntersectsWith(fish.Bounds))
             {
@@ -292,6 +289,7 @@ namespace Fish_Runner
                 explosion.Left = bomb.Left;
                 explosion.Top = bomb.Top;
                 explosion.Visible = true;
+                backgroundMusic.Stop();
                 explosionSound.Play();
                 gameOver();
             }

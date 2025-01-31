@@ -102,21 +102,6 @@
     <None Include="Resources\tas1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tas2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tas3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tas4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tas5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tas6.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Ekran görüntüsü 2024-12-19 205401.png" />
   </ItemGroup>
   <ItemGroup>
@@ -172,9 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sea3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tas51.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sea4 %281%29.png" />

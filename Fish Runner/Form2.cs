@@ -9,7 +9,7 @@ namespace Fish_Runner
         public Form2()
         {
             InitializeComponent();
-            this.Text = "Ana Menü";
+            this.Text = "Shark Frenzy";
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Fish_Runner
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // button1 için yapılacak işlemleri buraya yazabilirsiniz
+            
             MessageBox.Show("Watch out! After a while, mines and trash will appear. " +
                 " Trash negatively affects your hunger." +
                 " Don't hit the mines, little shark!" +
@@ -49,6 +49,11 @@ namespace Fish_Runner
         }
 
         private void MenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
